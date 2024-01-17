@@ -1,10 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Carousel from "./Carousel";
 import { motion, AnimatePresence } from "framer-motion";
+import Home from "./Home";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [color, setColor] = useState(false);
+  
+  
+  const changeColor = () => {
+    console.log(window)
+    window.scrollY >= 90 ? setColor(true) : setColor(false)
+  }
+  window.addEventListener("scroll",changeColor)
+
   const openMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -51,7 +60,7 @@ const Navbar = () => {
             variants={navbarVariant}
             initial="hidden"
             animate="visible"
-            className="flex items-center justify-between px-6 py-2 fixed left-0 right-0 top-0 z-20"
+            className={`flex items-center justify-between px-6 py-2 fixed left-0 right-0 top-0 z-20 ${color ? "bg-gray-200 text-gray-600" : "bg-none"}`}
           >
             <h1 className="font-extrabold text-2xl uppercase tracking-wider md:text-4xl">
               Reelman
@@ -78,8 +87,9 @@ const Navbar = () => {
               <Link onClick={closeMenu}>Contact</Link>
             </motion.div>
           )}</AnimatePresence>
-          <Carousel />
+          
         </div>
+        <Home />
       </div>
     </>
   );

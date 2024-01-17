@@ -1,24 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
-import carousel1 from "/src/assets/carousel/carousel1.jpg";
-import carousel4 from "/src/assets/carousel/carousel4.jpg";
-import carousel5 from "/src/assets/carousel/carousel5.jpg";
+import { slides } from "../fotos";
+import About from "./About";
 
-const Carousel = () => {
-  const slides = [
-    {
-      url: carousel1,
-    },
-    {
-      url: carousel4,
-    },
-    {
-      url: carousel5,
-    },
-  ];
+const Home = () => {
   const [currentIndex, setCurrent] = useState(0);
-  const carouselVariant = {
+  const HomeVariant = {
     hidden: {
       opacity: 0,
     },
@@ -43,7 +31,7 @@ const Carousel = () => {
   return (
     <>
       <motion.div
-        variants={carouselVariant}
+        variants={HomeVariant}
         initial="hidden"
         animate="visible"
         className="w-screen h-screen text-2xl relative"
@@ -53,6 +41,7 @@ const Carousel = () => {
             backgroundImage: `url(${slides[currentIndex].url})`,
             backgroundPosition: "center",
             backgroundSize: "cover",
+     
           }}
           className="w-full h-full duration-200"
         >
@@ -73,7 +62,8 @@ const Carousel = () => {
           </div>
         </div>
       </motion.div>
+      <About />
     </>
   );
 };
-export default Carousel;
+export default Home;
