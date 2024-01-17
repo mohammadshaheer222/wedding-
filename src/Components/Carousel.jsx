@@ -45,7 +45,7 @@ const Carousel = () => {
       <motion.div variants={carouselVariant} initial="hidden" animate="visible" className="w-screen h-screen text-2xl relative">
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-          className="w-full h-full duration-500 bg-center bg-cover"
+          className="w-full h-full duration-300 bg-center bg-cover"
         ></div>
         <div className="absolute top-0 w-full h-full flex justify-between items-center text-2xl px-3 md:text-4xl">
           <div onClick={prevSlide}>
