@@ -11,7 +11,7 @@ const Services = () => {
             <h1 className="mr-10">Groom To Be</h1>
             <h1 className="mr-10">Cinematography</h1>
             <h1 className="mr-10">Videography</h1>
-            <h1 className="mr-10">Videography</h1>
+            <h1 className="mr-10">Wedding</h1>
           </div>
         </Marquee>
       </div>

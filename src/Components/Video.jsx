@@ -28,7 +28,7 @@ const Video = () => {
   };
   return (
     <>
-      <div className="py-6 flex flex-wrap justify-center items-center">
+      <div className="py-6 flex flex-wrap justify-center items-center space-y-4">
         <motion.div variants={headingVariant} initial="hidden" whileInView="visible" >
           <h1 className="text-6xl text-center">Selected Videos</h1>
         </motion.div>
@@ -43,7 +43,7 @@ const Video = () => {
               </div>
             </Marquee>
           </div>
-          <video muted loop autoPlay preload="none" src={video1}></video>
+          <img className="w-screen" src={video1} alt="" />
         </motion.div>
       </div>
     </>

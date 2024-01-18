@@ -64,8 +64,9 @@ const Home = () => {
           </div>
         </div>
       </motion.div>
-      <About />
       <Services />
+      <About />
+      
       <Video />
     </>
   );
