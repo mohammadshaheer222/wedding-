@@ -5,7 +5,7 @@ const Video = () => {
     <>
       <div className="w-full h-full relative my-5">
         <div className="absolute top-0 h-full flex justify-center items-end">
-          <Marquee autoFill="true">
+          <Marquee>
             <div className="flex">
               <h1 className="video-h1">WEDDING</h1>
               <h1 className="video-h1">DAY</h1>
