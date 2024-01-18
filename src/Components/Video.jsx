@@ -28,7 +28,7 @@ const Video = () => {
   };
   return (
     <>
-      <div className="py-6">
+      <div className="py-6 flex flex-wrap justify-center items-center">
         <motion.div variants={headingVariant} initial="hidden" whileInView="visible" >
           <h1 className="text-6xl text-center">Selected Videos</h1>
         </motion.div>
