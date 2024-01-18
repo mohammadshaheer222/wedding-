@@ -55,12 +55,12 @@ const Navbar = () => {
   return (
     <>
       <div>
-        <div className="text-gray-400">
+        <div className="text-gray-500">
           <motion.nav
             variants={navbarVariant}
             initial="hidden"
             animate="visible"
-            className={`flex items-center justify-between px-6 py-2 fixed left-0 right-0 top-0 z-20 ${color ? "bg-gray-200 text-gray-600" : "bg-none"}`}
+            className={`flex items-center justify-between px-6 py-2 fixed left-0 right-0 top-0 z-20 ${color ? "bg-white" : "bg-none"}`}
           >
             <h1 className="font-extrabold text-2xl uppercase tracking-wider md:text-4xl">
               Reelman
