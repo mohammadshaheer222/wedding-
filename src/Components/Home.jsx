@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 import { slides } from "../fotos";
@@ -43,7 +43,7 @@ const Home = () => {
             backgroundSize: "cover",
      
           }}
-          className="w-full h-full duration-200"
+          className="w-full h-full duration-700 ease-in-out"
         >
           <img
             src={slides[currentIndex].url}
