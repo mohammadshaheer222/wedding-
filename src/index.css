@@ -3,3 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .video-h1 {
+        @apply mr-8 text-5xl font-extrabold tracking-widest text-gray-400 sm:text-8xl md:text-9xl;
+    }
+    
+}

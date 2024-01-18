@@ -4,6 +4,7 @@ import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 import { slides } from "../fotos";
 import About from "./About";
 import Services from "./Services";
+import Video from "./Video";
 
 const Home = () => {
   const [currentIndex, setCurrent] = useState(0);
@@ -65,6 +66,7 @@ const Home = () => {
       </motion.div>
       <About />
       <Services />
+      <Video />
     </>
   );
 };
