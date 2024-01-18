@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Home from "./Home";
 
@@ -89,7 +89,7 @@ const Navbar = () => {
           )}</AnimatePresence>
           
         </div>
-        <Home />
+        <Outlet />
       </div>
     </>
   );

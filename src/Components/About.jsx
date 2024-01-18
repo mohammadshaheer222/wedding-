@@ -41,6 +41,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            className="space-y-2"
           >
             <p>
               We try to tell each story in a simple,natural and elegant
