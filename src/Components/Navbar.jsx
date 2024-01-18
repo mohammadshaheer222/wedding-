@@ -81,7 +81,7 @@ const Navbar = () => {
               animate="visible"
               className="bg-white font-semibold tracking-wider flex flex-col items-center justify-center h-screen gap-10 fixed left-0 right-0 top-0 z-10 md:text-lg"
             >
-              <Link onClick={closeMenu}>Home</Link>
+              <Link to="/" onClick={closeMenu}>Home</Link>
               <Link onClick={closeMenu}>About</Link>
               <Link onClick={closeMenu}>Works</Link>
               <Link onClick={closeMenu}>Contact</Link>
