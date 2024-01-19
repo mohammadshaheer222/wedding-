@@ -7,7 +7,7 @@ const About = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.02,
+        delay: 0.04,
         duration: 0.8,
       },
     },
@@ -19,7 +19,7 @@ const About = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.04,
+        delay: 0.06,
         duration: 0.8,
       },
     },

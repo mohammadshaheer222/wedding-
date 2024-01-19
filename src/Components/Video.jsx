@@ -9,7 +9,7 @@ const Video = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.02,
+        delay: 0.04,
         duration: 0.8,
       },
     },
@@ -21,7 +21,7 @@ const Video = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.04,
+        delay: 0.06,
         duration: 0.8,
       },
     },
@@ -29,11 +29,11 @@ const Video = () => {
   return (
     <>
       <div className="flex flex-wrap justify-center items-center py-6">
-        <motion.div variants={headingVariant} initial="hidden" whileInView="visible" >
+        <motion.div variants={headingVariant} initial="hidden" whileInView="visible" viewport="true" >
           <h1 className="text-6xl text-center mb-6">Selected 
           Works</h1>
         </motion.div>
-        <motion.div variants={videoVariant} initial="hidden" whileInView="visible" className="w-screen h-full relative">
+        <motion.div variants={videoVariant} initial="hidden" whileInView="visible" viewport="true" className="w-screen h-full relative">
           <div className="absolute top-0 w-screen h-full flex justify-center items-end">
             <Marquee>
               <div className="flex overflow-hidden">
@@ -44,7 +44,7 @@ const Video = () => {
               </div>
             </Marquee>
           </div>
-          <img className="h-80 w-screen md:h-full" src={video1} alt="" />
+          <img className="w-screen" src={video1} alt="" />
         </motion.div>
 
         <motion.div variants={videoVariant} initial="hidden" whileInView="visible" className="w-screen h-full relative">
@@ -58,7 +58,7 @@ const Video = () => {
               </div>
             </Marquee>
           </div>
-          <img className="h-80 w-screen md:h-full" src={video1} alt="" />
+          <img className="w-screen" src={video1} alt="" />
         </motion.div>
 
         <motion.div variants={videoVariant} initial="hidden" whileInView="visible" className="w-screen h-full relative">
@@ -72,7 +72,7 @@ const Video = () => {
               </div>
             </Marquee>
           </div>
-          <img className="h-80 w-screen md:h-full" src={video1} alt="" />
+          <img className="w-screen" src={video1} alt="" />
         </motion.div>
         
       </div>

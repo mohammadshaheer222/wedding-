@@ -6,13 +6,12 @@ import Home from "./Home";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [color, setColor] = useState(false);
-  
-  
+
   const changeColor = () => {
-    console.log(window)
-    window.scrollY >= 90 ? setColor(true) : setColor(false)
-  }
-  window.addEventListener("scroll",changeColor)
+    console.log(window);
+    window.scrollY >= 90 ? setColor(true) : setColor(false);
+  };
+  window.addEventListener("scroll", changeColor);
 
   const openMenu = () => {
     setIsOpen(!isOpen);
@@ -60,34 +59,41 @@ const Navbar = () => {
             variants={navbarVariant}
             initial="hidden"
             animate="visible"
-            className={`flex items-center justify-between px-6 py-2 fixed left-0 right-0 top-0 z-20 ${color ? "bg-white" : "bg-none"}`}
+            className={`flex items-center justify-between px-6 py-2 fixed left-0 right-0 top-0 z-20 ${
+              color ? "bg-white" : "bg-none"
+            }`}
           >
             <h1 className="font-extrabold text-2xl uppercase tracking-wider md:text-4xl">
               Reelman
             </h1>
-            <p
-              onClick={openMenu}
-              className="font-semibold text-sm tracking-wider cursor-pointer md:text-lg"
-            >
-              {isOpen ? "[CLOSE]" : "[MENU]"}
-            </p>
+            <div className="flex items-center gap-5"> 
+              <a href="https://wa.me/7561847879" className="font-semibold text-sm tracking-wider cursor-pointer md:text-lg">[ LET'S CHAT ]</a>
+              <p
+                onClick={openMenu}
+                className="font-semibold text-sm tracking-wider cursor-pointer md:text-lg"
+              >
+                {isOpen ? "[CLOSE]" : "[MENU]"}
+              </p>
+            </div>
           </motion.nav>
           <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              variants={mobNavVariant}
-              exit="exit"
-              initial="hidden"
-              animate="visible"
-              className="bg-white font-semibold tracking-wider flex flex-col items-center justify-center h-screen gap-10 fixed left-0 right-0 top-0 z-10 md:text-lg"
-            >
-              <Link to="/" onClick={closeMenu}>Home</Link>
-              <Link onClick={closeMenu}>About</Link>
-              <Link onClick={closeMenu}>Works</Link>
-              <Link onClick={closeMenu}>Contact</Link>
-            </motion.div>
-          )}</AnimatePresence>
-          
+            {isOpen && (
+              <motion.div
+                variants={mobNavVariant}
+                exit="exit"
+                initial="hidden"
+                animate="visible"
+                className="bg-white font-semibold tracking-wider flex flex-col items-center justify-center h-screen gap-10 fixed left-0 right-0 top-0 z-10 md:text-lg"
+              >
+                <Link to="/" onClick={closeMenu}>
+                  Home
+                </Link>
+                <Link onClick={closeMenu}>About</Link>
+                <Link onClick={closeMenu}>Works</Link>
+                <Link onClick={closeMenu}>Contact</Link>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
         <Outlet />
       </div>
