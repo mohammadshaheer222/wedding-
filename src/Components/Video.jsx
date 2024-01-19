@@ -29,11 +29,11 @@ const Video = () => {
   return (
     <>
       <div className="flex flex-wrap justify-center items-center py-6">
-        <motion.div variants={headingVariant} initial="hidden" whileInView="visible" viewport="true" >
+        <motion.div variants={headingVariant} initial="hidden" whileInView="visible" viewport={{once: true}} >
           <h1 className="text-6xl text-center mb-6">Selected 
           Works</h1>
         </motion.div>
-        <motion.div variants={videoVariant} initial="hidden" whileInView="visible" viewport="true" className="w-screen h-full relative">
+        <motion.div variants={videoVariant} initial="hidden" whileInView="visible" viewport={{once: true}} className="w-screen h-full relative">
           <div className="absolute top-0 w-screen h-full flex justify-center items-end">
             <Marquee>
               <div className="flex overflow-hidden">
@@ -47,7 +47,7 @@ const Video = () => {
           <img className="w-screen" src={video1} alt="" />
         </motion.div>
 
-        <motion.div variants={videoVariant} initial="hidden" whileInView="visible" className="w-screen h-full relative">
+        <motion.div variants={videoVariant} initial="hidden" whileInView="visible" viewport={{once: true}} className="w-screen h-full relative">
           <div className="absolute top-0 w-screen h-full flex justify-center items-end">
             <Marquee>
               <div className="flex overflow-hidden">
@@ -61,7 +61,7 @@ const Video = () => {
           <img className="w-screen" src={video1} alt="" />
         </motion.div>
 
-        <motion.div variants={videoVariant} initial="hidden" whileInView="visible" className="w-screen h-full relative">
+        <motion.div variants={videoVariant} initial="hidden" whileInView="visible" viewport={{once: true}} className="w-screen h-full relative">
           <div className="absolute top-0 w-screen h-full flex justify-center items-end">
             <Marquee>
               <div className="flex overflow-hidden">

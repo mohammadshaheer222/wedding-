@@ -66,7 +66,7 @@ const Navbar = () => {
             <h1 className="font-extrabold text-2xl uppercase tracking-wider md:text-4xl">
               Reelman
             </h1>
-            <div className="flex items-center gap-5"> 
+            <div className="flex items-center gap-3"> 
               <a href="https://wa.me/7561847879" className="font-semibold text-sm tracking-wider cursor-pointer md:text-lg">[ LET'S CHAT ]</a>
               <p
                 onClick={openMenu}
