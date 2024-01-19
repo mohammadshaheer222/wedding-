@@ -71,8 +71,6 @@ const About = () => {
           />
         </motion.div>
       </div>
-      <div className="bg-parallax h-96 bg-center bg-cover bg-fixed"> 
-      </div>
     </>
   );
 };
