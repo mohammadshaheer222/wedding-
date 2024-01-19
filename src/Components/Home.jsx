@@ -64,9 +64,8 @@ const Home = () => {
           </div>
         </div>
       </motion.div>
-      <Services />
+      {/* <Services /> */}
       <About />
-      
       <Video />
     </>
   );

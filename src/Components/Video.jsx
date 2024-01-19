@@ -28,11 +28,12 @@ const Video = () => {
   };
   return (
     <>
-      <div className="py-6 flex flex-wrap justify-center items-center space-y-4">
+      <div className="flex flex-wrap justify-center items-center py-6">
         <motion.div variants={headingVariant} initial="hidden" whileInView="visible" >
-          <h1 className="text-6xl text-center">Selected Videos</h1>
+          <h1 className="text-6xl text-center mb-6">Selected 
+          Works</h1>
         </motion.div>
-        <motion.div variants={videoVariant} initial="hidden" whileInView="visible" className="w-screen h-full relative my-5">
+        <motion.div variants={videoVariant} initial="hidden" whileInView="visible" className="w-screen h-full relative">
           <div className="absolute top-0 w-screen h-full flex justify-center items-end">
             <Marquee>
               <div className="flex overflow-hidden">
@@ -43,8 +44,37 @@ const Video = () => {
               </div>
             </Marquee>
           </div>
-          <img className="w-screen" src={video1} alt="" />
+          <img className="h-80 w-screen md:h-full" src={video1} alt="" />
         </motion.div>
+
+        <motion.div variants={videoVariant} initial="hidden" whileInView="visible" className="w-screen h-full relative">
+          <div className="absolute top-0 w-screen h-full flex justify-center items-end">
+            <Marquee>
+              <div className="flex overflow-hidden">
+                <h1 className="video-h1">WEDDING</h1>
+                <h1 className="video-h1">DAY</h1>
+                <h1 className="video-h1">WEDDING</h1>
+                <h1 className="video-h1">DAY</h1>
+              </div>
+            </Marquee>
+          </div>
+          <img className="h-80 w-screen md:h-full" src={video1} alt="" />
+        </motion.div>
+
+        <motion.div variants={videoVariant} initial="hidden" whileInView="visible" className="w-screen h-full relative">
+          <div className="absolute top-0 w-screen h-full flex justify-center items-end">
+            <Marquee>
+              <div className="flex overflow-hidden">
+                <h1 className="video-h1">WEDDING</h1>
+                <h1 className="video-h1">DAY</h1>
+                <h1 className="video-h1">WEDDING</h1>
+                <h1 className="video-h1">DAY</h1>
+              </div>
+            </Marquee>
+          </div>
+          <img className="h-80 w-screen md:h-full" src={video1} alt="" />
+        </motion.div>
+        
       </div>
     </>
   );
