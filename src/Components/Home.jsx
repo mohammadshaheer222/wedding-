@@ -5,6 +5,7 @@ import { slides } from "../fotos";
 import About from "./About";
 import Services from "./Services";
 import Video from "./Video";
+import Work from "./Work";
 
 const Home = () => {
   const [currentIndex, setCurrent] = useState(0);
@@ -67,6 +68,7 @@ const Home = () => {
       {/* <Services /> */}
       <About />
       <Video />
+      <Work />
     </>
   );
 };
