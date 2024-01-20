@@ -38,9 +38,6 @@ const Video = () => {
             <Marquee>
               <div className="flex overflow-hidden">
                 <h1 className="video-h1">WEDDING</h1>
-                <h1 className="video-h1">DAY</h1>
-                <h1 className="video-h1">WEDDING</h1>
-                <h1 className="video-h1">DAY</h1>
               </div>
             </Marquee>
           </div>
@@ -52,9 +49,6 @@ const Video = () => {
             <Marquee>
               <div className="flex overflow-hidden">
                 <h1 className="video-h1">WEDDING</h1>
-                <h1 className="video-h1">DAY</h1>
-                <h1 className="video-h1">WEDDING</h1>
-                <h1 className="video-h1">DAY</h1>
               </div>
             </Marquee>
           </div>
@@ -66,9 +60,6 @@ const Video = () => {
             <Marquee>
               <div className="flex overflow-hidden">
                 <h1 className="video-h1">WEDDING</h1>
-                <h1 className="video-h1">DAY</h1>
-                <h1 className="video-h1">WEDDING</h1>
-                <h1 className="video-h1">DAY</h1>
               </div>
             </Marquee>
           </div>
