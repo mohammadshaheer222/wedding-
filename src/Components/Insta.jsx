@@ -1,4 +1,7 @@
-import { carousel1, carousel4, carousel5 } from "../fotos";
+// import { carousel1, carousel4, carousel5 } from "../fotos";
+import carousel1 from "/src/assets/images/carousel/carousel1.jpg"
+import carousel4 from "/src/assets/images/carousel/carousel4.jpg"
+import carousel5 from "/src/assets/images/carousel/carousel5.jpg"
 const Insta = () => {
   return (
     <>

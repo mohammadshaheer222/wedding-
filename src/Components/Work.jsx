@@ -31,7 +31,7 @@ const Work = () => {
     <>
       <div className=" w-screen p-6 flex flex-wrap items-center justify-center gap-5">
         {work.map((work, index) => (
-          <div className="relative flex flex-wrap items-center justify-center uppercase hover:scale-105 cursor-pointer transition-all duration-200">
+          <div key={index} className="relative flex flex-wrap items-center justify-center uppercase hover:scale-105 cursor-pointer transition-all duration-200">
             <motion.img variants={imageVariant} initial="hidden" whileInView="visible" custom={index} viewport={{once: true}} className="h-96 rounded-sm" src={work.image} alt="" />
             <motion.div variants={titleVariant} initial="hidden" whileInView="visible" custom={index} viewport={{once: true}} className="absolute top-0 flex flex-col items-center justify-end w-full h-full text-white/80">
               <h1  className="text-5xl">{work.groom}</h1>

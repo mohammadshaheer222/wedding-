@@ -9,7 +9,6 @@ const Navbar = () => {
   const [color, setColor] = useState(false);
 
   const changeColor = () => {
-    console.log(window);
     window.scrollY >= 90 ? setColor(true) : setColor(false);
   };
   window.addEventListener("scroll", changeColor);
@@ -97,7 +96,7 @@ const Navbar = () => {
           </AnimatePresence>
         </div>
         <Outlet />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
