@@ -3,13 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        'parallax' : 'url("/src/assets/images/parallelax.jpg")'
-      }
+      // backgroundImage: {
+      //   'parallax' : 'url("/src/assets/images/parallelax.jpg")'
+      // }
     },
-    fontFamily: {
-      "quikSand" : ['Garamond', "sans-serif"],
-    }
+    // fontFamily: {
+    //   abc : ["Urban Grotesk", "sans-serif"],
+    // }
   },
   plugins: [],
 };

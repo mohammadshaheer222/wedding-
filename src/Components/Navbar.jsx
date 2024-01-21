@@ -64,7 +64,7 @@ const Navbar = () => {
               color ? "bg-white" : "bg-none"
             }`}
           >
-            <h1 className="font-semibold text-2xl uppercase tracking-wider md:text-4xl">
+            <h1 className="font-semibold font-popins text-2xl uppercase tracking-wider md:text-4xl">
               Reelman
             </h1>
             <div className="flex items-center gap-3"> 
