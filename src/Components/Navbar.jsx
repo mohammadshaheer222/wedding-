@@ -97,7 +97,7 @@ const Navbar = () => {
           </AnimatePresence>
         </div>
         <Outlet />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
