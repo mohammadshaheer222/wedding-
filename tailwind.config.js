@@ -8,7 +8,7 @@ export default {
       }
     },
     fontFamily: {
-      "quikSand" : ['Quicksand', "sans-serif"],
+      "quikSand" : ['Garamond', "sans-serif"],
     }
   },
   plugins: [],

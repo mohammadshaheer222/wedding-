@@ -1,27 +1,40 @@
+import {motion} from "framer-motion";
 import {work} from "../fotos"
 const Work = () => {
-  // const work = [
-  //   {
-  //     image: "/src/assets/images/work/gal-1.jpg",
-  //     groom: "Akhil",
-  //     bride: "Devika",
-  //   },
-  //   {
-  //       image: "",
-  //       groom: "jo",
-  //       bride: "Joyal",
-  //     },
-  // ];
+  const imageVariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: (index) => ({
+      opacity: 1,
+      transition: {
+        delay:index * 0.04,
+        duration: 0.8,
+      },
+    }),
+  };
+  const titleVariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: (index) => ({
+      opacity: 1,
+      transition: {
+        delay: index * 0.06,
+        duration: 0.8,
+      },
+    }),
+  };
   return (
     <>
       <div className=" w-screen p-6 flex flex-wrap items-center justify-center gap-5">
-        {work.map((work) => (
-          <div className="relative flex flex-wrap items-center justify-center uppercase">
-            <img className="h-96" src={work.image} alt="" />
-            <div className="absolute top-0 flex flex-col items-center justify-center w-full h-full text-white/80">
-              <h1 className="text-5xl">{work.groom}</h1>
-              <p className="text-2xl">weds</p>
-              <h1 className="text-5xl">{work.bride}</h1>
+        {work.map((work, index) => (
+          <div className="relative flex flex-wrap items-center justify-center uppercase hover:scale-105 cursor-pointer transition-all duration-200">
+            <motion.img variants={imageVariant} initial="hidden" whileInView="visible" custom={index} viewport={{once: true}} className="h-96 rounded-sm" src={work.image} alt="" />
+            <div  className="absolute top-0 flex flex-col items-center justify-end w-full h-full text-white/80">
+              <motion.h1 variants={titleVariant} initial="hidden" whileInView="visible" custom={index} viewport={{once: true}} className="text-5xl">{work.groom}</motion.h1>
+              <motion.p variants={titleVariant} initial="hidden" whileInView="visible" custom={index} viewport={{once: true}} className="text-2xl">WEDS</motion.p>
+              <motion.h1 variants={titleVariant} initial="hidden" whileInView="visible" custom={index} viewport={{once: true}} className="text-5xl">{work.bride}</motion.h1>
             </div>
           </div>
         ))}
