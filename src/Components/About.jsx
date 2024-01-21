@@ -34,7 +34,7 @@ const About = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <h1 className="text-6xl uppercase">Reelman Production</h1>
+            <h1 className="text-5xl md:text-6xl ">Reelman Production</h1>
           </motion.div>
           <motion.div
             variants={paraVariant}

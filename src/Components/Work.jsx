@@ -16,9 +16,11 @@ const Work = () => {
   const titleVariant = {
     hidden: {
       opacity: 0,
+      y:50
     },
     visible: (index) => ({
       opacity: 1,
+      y:0,
       transition: {
         delay: index * 0.06,
         duration: 0.8,

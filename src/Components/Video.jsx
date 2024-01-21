@@ -30,7 +30,7 @@ const Video = () => {
     <>
       <div className="flex flex-wrap justify-center items-center py-6 w-screen">
         <motion.div variants={headingVariant} initial="hidden" whileInView="visible" viewport={{once: true}} >
-          <h1 className="text-6xl text-center mb-6 uppercase">Selected 
+          <h1 className="text-5xl md:text-6xl  text-center mb-6 ">Selected 
           Works</h1>
         </motion.div>
         <motion.div variants={videoVariant} initial="hidden" whileInView="visible" viewport={{once: true}} className="w-screen h-full relative">
