@@ -33,7 +33,7 @@ const Work = () => {
             <motion.img variants={imageVariant} initial="hidden" whileInView="visible" custom={index} viewport={{once: true}} className="h-96 rounded-sm" src={work.image} alt="" />
             <div  className="absolute top-0 flex flex-col items-center justify-end w-full h-full text-white/80">
               <motion.h1 variants={titleVariant} initial="hidden" whileInView="visible" custom={index} viewport={{once: true}} className="text-5xl">{work.groom}</motion.h1>
-              <motion.p variants={titleVariant} initial="hidden" whileInView="visible" custom={index} viewport={{once: true}} className="text-2xl">WEDS</motion.p>
+              <motion.p variants={titleVariant} initial="hidden" whileInView="visible" custom={index} viewport={{once: true}} >WEDS</motion.p>
               <motion.h1 variants={titleVariant} initial="hidden" whileInView="visible" custom={index} viewport={{once: true}} className="text-5xl">{work.bride}</motion.h1>
             </div>
           </div>

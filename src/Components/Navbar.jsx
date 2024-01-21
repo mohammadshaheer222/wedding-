@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Home from "./Home";
+import Footer from "./Footer";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -96,6 +97,7 @@ const Navbar = () => {
           </AnimatePresence>
         </div>
         <Outlet />
+        <Footer />
       </div>
     </>
   );
