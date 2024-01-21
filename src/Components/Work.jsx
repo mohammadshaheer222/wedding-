@@ -1,16 +1,17 @@
+import {work} from "../fotos"
 const Work = () => {
-  const work = [
-    {
-      image: "/src/assets/images/work/gal-1.jpg",
-      groom: "Akhil",
-      bride: "Devika",
-    },
-    {
-        image: "/src/assets/images/work/gal-1.jpg",
-        groom: "jo",
-        bride: "Joyal",
-      },
-  ];
+  // const work = [
+  //   {
+  //     image: "/src/assets/images/work/gal-1.jpg",
+  //     groom: "Akhil",
+  //     bride: "Devika",
+  //   },
+  //   {
+  //       image: "",
+  //       groom: "jo",
+  //       bride: "Joyal",
+  //     },
+  // ];
   return (
     <>
       <div className=" w-screen p-6 flex flex-wrap items-center justify-center gap-5">
