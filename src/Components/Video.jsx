@@ -54,7 +54,7 @@ const Video = () => {
             </Marquee>
           </div>
           <div
-            className="h-screen flex items-center justify-center"
+            className="h-[80vh] flex items-center justify-center"
             style={{
               backgroundImage: `url(${video1})`,
               backgroundSize: "cover",
@@ -77,13 +77,14 @@ const Video = () => {
             </Marquee>
           </div>
           <div
-            className="h-screen flex items-center justify-center"
+            className="h-[80vh] flex items-center justify-center"
             style={{
               backgroundImage: `url(${video1})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
           ></div>
+          
         </motion.div>
       </div>
     </>
