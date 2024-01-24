@@ -35,7 +35,7 @@ const Video = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h1 className="text-5xl md:text-6xl  text-center mb-6 ">
+          <h1 className="text-4xl md:text-6xl  text-center mb-6 uppercase">
             Selected Works
           </h1>
         </motion.div>
