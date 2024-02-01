@@ -7,9 +7,9 @@ export default {
       //   'parallax' : 'url("/src/assets/images/parallelax.jpg")'
       // }
     },
-    // fontFamily: {
-    //   abc : ["Urban Grotesk", "sans-serif"],
-    // }
+    fontFamily: {
+      spaceMono: ['Space Mono', "monospace"]
+    }
   },
   plugins: [],
 };
